@@ -5,7 +5,7 @@ import RecipeForm from '../components/RecipeForm';
 import RecipeList from '../components/RecipeList';
 import { Recipe } from '../types/Recipe';
 
-const HomeScreen: React.FC = (navigation) => {
+const HomeScreen: React.FC = ({navigation}) => {
   const [recipes, setRecipes] = useState<Recipe[]>([]);
   const [search, setSearch] = useState('');
 
